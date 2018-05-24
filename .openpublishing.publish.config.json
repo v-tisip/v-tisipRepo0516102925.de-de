@@ -17,6 +17,16 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "branches_to_filter": [
+    "live-sxs",
+    "master-sxs"
+  ],
+  "need_preview_pull_request": false,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -34,18 +44,11 @@
       "branch": "master"
     }
   ],
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
-  "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
-  ],
-  "need_preview_pull_request": false,
   "branch_target_mapping": {
     "master": [
+      "Publish"
+    ],
+    "live": [
       "Publish",
       "PDF"
     ]
